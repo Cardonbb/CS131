@@ -1,0 +1,51 @@
+    1  sudo systemctl restart sshd
+    2  cat ~/.ssh/authorized_keys
+    3  ssh -i ~/.ssh/id_rsa carter_alemania@35.233.164.234
+    4  ssh -i ~/.ssh/id_rsa carter_alemania@35.233.164.234
+    5  cat ~/.ssh/authorized_keys
+    6  ls
+    7  cd cs131
+    8  ls
+    9  mkdir ws2
+   10  ls
+   11  cd ws2
+   12  ls
+   13  echo $HOME
+   14  echo "Home" > ws2.txt
+   15  $HOME >> ws2.txt
+   16  ls
+   17  vim ws2.txt
+   18  $HOME
+   19  echo $HOME >> ws2.txt
+   20  vim ws2.txt
+   21  ls /proc/ | grep
+   22  ls /proc/ | grep mem
+   23  ls /proc/ | grep cpu
+   24  id
+   25  echo "UID" >> ws2.txt
+   26  echo id >> ws2.txt
+   27  vim ws2.txt
+   28  id
+   29  id >> ws2.txt
+   30  vim ws2.txt
+   31  echo "mem " >> ws2.txt
+   32  ls /proc/ | grep mem >> ws2.txt
+   33  echo "cpu" >> ws2.txt
+   34  ls /proc/ | grep cpu >> ws2.txt
+   35  vim ws2.txt
+   36  echo "memory info" >> ws2.txt
+   37  head -n 10 /proc/meminfo
+   38  head -n 10 /proc/meminfo >> ws2.txt
+   39  echo "cpu info" >> ws2.txt
+   40  head -n 20 /proc/cpuinfo
+   41  tail -n 20 /proc/cpuinfo
+   42  cat /proc/cpuinfo
+   43  head -n 20 /proc/cpuinfo >> ws2.txt
+   44  tail -n 20 /proc/cpuinfo >> ws2.txt
+   45  cat /proc/cpuinfo >> ws2.txt
+   46  vim ws2.txt
+   47  cat /etc/os-release
+   48  echo "OS" >> ws2.txt
+   49  cat /etc/os-release >> ws2.txt
+   50  vim ws2.txt
+   51  history > cmds.log
