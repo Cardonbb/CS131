@@ -1,0 +1,50 @@
+  594  ls
+  595  vim ~./bashrc
+  596  nano ~/.bashrc
+  597  l
+  598  w
+  599  nano ~/.bashrc
+  600  w
+  601  ls
+  602  w
+  603  source ~./bashrc
+  604  ls -la ~
+  605  nano ~/.bashrc
+  606  source ~/.bashrc
+  607  l
+  608  w
+  609  ls
+  610  mkdir a1
+  611  ls
+  612  cd a1
+  613  ls
+  614  mkdir FARE
+  615  head -n 5 2019-01-h1.csv
+  616  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  617  ls
+  618  head -n 5 2019-01-h1.csv
+  619  grep ',48\.0,161\.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/48.0-161.0.txt
+  620  grep ',161\.0,48\.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/161.0-48.0.txt
+  621  count1=$(wc -l < FARE/48.0-161.0.txt)
+  622  sum1=$(paste -sd+ FARE/48.0-161.0.txt | bc)
+  623  avg1=$(echo "scale=2; $sum1 / $count1" | bc)
+  624  echo "Mean fare for 48.0 to 161.0: $avg1" >> a1.txt 
+  625  count2=$(wc -l < FARE/161.0-48.0.txt)
+  626  sum2=$(paste -sd+ FARE/161.0-48.0.txt | bc)
+  627  avg2=$(echo "scale=2; $sum2 / $count2" | bc)
+  628  echo "Mean fare for 161.0 to 48.0: $avg2" >> a1.txt 
+  629  grep '2019-01-10' 2019-01-h1.csv > jan10.csv
+  630  cut -d',' -f17 jan10.csv > jan10_total.txt
+  631  max_total=$(sort -n jan10_total.txt | tail -1)
+  632  echo "Highest total on jan 10: $max_total" >> a1.txt
+  633  grep ',[3-9],' 2019-01-h1.csv > multi_passenger_rides.csv
+  634  cut -d',' -f9 multi_passenger_rides.csv > multi_passenger_doloc.txt
+  635  echo "Top 10 dropoff with 3+ pass:" >> a1.txt 
+  636  sort multi_passenger_doloc.txt | uniq -c | sort -nr | head -10 >> a1.txt
+  637  ls
+  638  cd a1.txt
+  639  cat a1.txt
+  640  nano a1.txt
+  641  history > cmds.log
+  642  ls
+  643  history > cmds.log

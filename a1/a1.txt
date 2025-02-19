@@ -1,0 +1,15 @@
+task1 just did bashrc file and then added 
+alias l="ls -ltr"
+alias w="ls -l | wc"
+
+2a mkdir FARE
+2b used 48 to 161 and 48 to 161
+
+2c the averages
+Mean fare for 48.0 to 161.0: 7.07
+Mean fare for 161.0 to 48.0: 7.77
+
+2d highest someone was paid
+Highest total on jan 10: 36090.3
+2e 10 top dropoffs with 3+ pass so either i did wrong or none over 3+?
+Top 10 dropoff with 3+ pass:
