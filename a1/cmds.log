@@ -1,0 +1,643 @@
+    1  sudo systemctl restart sshd
+    2  cat ~/.ssh/authorized_keys
+    3  ssh -i ~/.ssh/id_rsa carter_alemania@35.233.164.234
+    4  ssh -i ~/.ssh/id_rsa carter_alemania@35.233.164.234
+    5  cat ~/.ssh/authorized_keys
+    6  ls
+    7  cd cs131
+    8  ls
+    9  mkdir ws2
+   10  ls
+   11  cd ws2
+   12  ls
+   13  echo $HOME
+   14  echo "Home" > ws2.txt
+   15  $HOME >> ws2.txt
+   16  ls
+   17  vim ws2.txt
+   18  $HOME
+   19  echo $HOME >> ws2.txt
+   20  vim ws2.txt
+   21  ls /proc/ | grep
+   22  ls /proc/ | grep mem
+   23  ls /proc/ | grep cpu
+   24  id
+   25  echo "UID" >> ws2.txt
+   26  echo id >> ws2.txt
+   27  vim ws2.txt
+   28  id
+   29  id >> ws2.txt
+   30  vim ws2.txt
+   31  echo "mem " >> ws2.txt
+   32  ls /proc/ | grep mem >> ws2.txt
+   33  echo "cpu" >> ws2.txt
+   34  ls /proc/ | grep cpu >> ws2.txt
+   35  vim ws2.txt
+   36  echo "memory info" >> ws2.txt
+   37  head -n 10 /proc/meminfo
+   38  head -n 10 /proc/meminfo >> ws2.txt
+   39  echo "cpu info" >> ws2.txt
+   40  head -n 20 /proc/cpuinfo
+   41  tail -n 20 /proc/cpuinfo
+   42  cat /proc/cpuinfo
+   43  head -n 20 /proc/cpuinfo >> ws2.txt
+   44  tail -n 20 /proc/cpuinfo >> ws2.txt
+   45  cat /proc/cpuinfo >> ws2.txt
+   46  vim ws2.txt
+   47  cat /etc/os-release
+   48  echo "OS" >> ws2.txt
+   49  cat /etc/os-release >> ws2.txt
+   50  vim ws2.txt
+   51  history > cmds.log
+   52  vim cmds.log
+   53  ls
+   54  cat ws2.txt
+   55  git add ws2.txt
+   56  git add cmds.log
+   57  git commit -m "assignment #2"
+   58  git push origin main
+   59  git pull origin main --rebase
+   60  git push origin main
+   61  ls
+   62  cd
+   63  ld
+   64  ls
+   65  cd cs131
+   66  ls
+   67  cd cs131
+   68  ls
+   69  git rebase --abort
+   70  ls
+   71  git pull origin main --no-rebase
+   72  git push origin main
+   73  ls
+   74  git pull
+   75  ls
+   76  git log --oneline --graph --decorate --all
+   77  ls
+   78  git add .
+   79  git status
+   80  git commit -m
+   81  ls
+   82  cd ws2
+   83  ls
+   84  git add ws2
+   85  cd .
+   86  ls
+   87  cd ..
+   88  ls
+   89  git add ws2
+   90  git status
+   91  git add cmds.log
+   92  ls
+   93  cd ws2
+   94  ls
+   95  git add cmds.log
+   96  git add ws2.txt
+   97  git status
+   98  git commit -m
+   99  git status
+  100  git commit -m "hw2"
+  101  git push origin master
+  102  git push origin main
+  103  git pull origin main --rebase
+  104  cat README.md
+  105  nano README.md
+  106  vim README.md
+  107  ls -l README.md
+  108  ls
+  109  cd
+  110  ls
+  111  cd cs131
+  112  ls
+  113  cd cs131
+  114  ls
+  115  git status
+  116  git rebase --abort
+  117  ls
+  118  cd cs131
+  119  ls
+  120  cd ws2
+  121  ls
+  122  git status
+  123  git add .
+  124  git status
+  125  ls -la
+  126  git ls-files | grep ws2
+  127  git push origin main
+  128  git pull --rebase origin main
+  129  git rebase --abort
+  130  ls
+  131  git status
+  132  ls
+  133  cd
+  134  cd ..
+  135  ls
+  136  cd carter_alemania
+  137  ls
+  138  cd cs131
+  139  ls
+  140  cd cs131
+  141  git ls-files --deleted
+  142  git restore .
+  143  ls
+  144  git rebase --abort
+  145  git ls-files --deletedcp -r ~/cs131/ws2 ~/ws2_backup
+  146  cp -r ~/cs131/ws2 ~/ws2_backup
+  147  ls
+  148  cd ws2
+  149  ls
+  150  cd ~/cs131
+  151  git reset --hard origin/main
+  152  git stauts
+  153  ls
+  154  git status
+  155  cp -r ~/ws2_backup ~/cs131/ws2
+  156  cd ~/cs131
+  157  git add ws2
+  158  git commit -m "Re-adding ws2 directory"
+  159  git push origin main --force
+  160  sudo apt update
+  161  sudo apt install python3-pip -y
+  162  pip install gdown
+  163  sudo dpkg --configure -a
+  164  sudo apt update
+  165  sudo apt install python3-pip -y
+  166  sudo apt clean
+  167  sudo apt update
+  168  sudo apt install python3-pip -y
+  169  pip install gdown
+  170  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  171  ~/.local/bin/gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  172  echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
+  173  source ~/.bashrc
+  174  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  175  grep "^2019-01-02" dataset.csv > jan2_trips.csv
+  176  grep "^2019-01-02" 2019-01-h1.csv > jan2_trips.csv
+  177  ls
+  178  cd jan2_trips.csv
+  179  grep "^2019-01-10" 2019-01-h1.csv > jan10_trips.csv
+  180  echo "Top 3 pickup locations on January 2" > ws3.txt
+  181  cat top3_jan2.txt >> ws3.txt
+  182  echo "" >> ws3.txt
+  183  echo "Top 3 pickup locations on January 10" >> ws3.txt
+  184  cat top3_jan10.txt >> ws3.txt
+  185  echo "" >> ws3.txt
+  186  vim ws3.txt
+  187  cut -d',' -f3 jan2_trips.csv | sort | uniq -c | sort -nr | head -3 > top3_jan2.txt
+  188  cut -d',' -f3 jan10_trips.csv | sort | uniq -c | sort -nr | head -3 > top3_jan10.txt
+  189  echo "Top 3 pickup locations on January 2, 2019:" > ws3.txt
+  190  cat top3_jan2.txt >> ws3.txt
+  191  echo "" >> ws3.txt
+  192  echo "Top 3 pickup locations on January 10, 2019:" >> ws3.txt
+  193  cat top3_jan10.txt >> ws3.txt
+  194  echo "" >> ws3.txt
+  195  cat ws3.txt
+  196  head -n 5 jan2_trips.csv
+  197  head -n 5 jan10_trips.csv
+  198  head -n 10 2019-01-h1.csv
+  199  cut -d',' -f8 jan2_trips.csv | sort | uniq -c | sort -nr | head -3 > top3_jan2.txt
+  200  cut -d',' -f8 jan10_trips.csv | sort | uniq -c | sort -nr | head -3 > top3_jan10.txt
+  201  cat top3_jan2.txt
+  202  cat top3_jan10.txt
+  203  head -n 5 jan2_trips.csv
+  204  head -n 5 jan10_trips.csv
+  205  grep "^2019-01-02" 2019-01-h1.csv
+  206  grep "^2019-01-10" 2019-01-h1.csv
+  207  grep '"2019-01-02' 2019-01-h1.csv > jan2_trips.csv
+  208  grep '"2019-01-10' 2019-01-h1.csv > jan10_trips.csv
+  209  head -n 5 jan2_trips.csv
+  210  head -n 5 jan10_trips.csv
+  211  cut -d',' -f8 jan2_trips.csv | tr -d '"' | sort | uniq -c | sort -nr | head -3 > top3_jan2.txt
+  212  cut -d',' -f8 jan10_trips.csv | tr -d '"' | sort | uniq -c | sort -nr | head -3 > top3_jan10.txt
+  213  cat top3_jan2.txt
+  214  cat top3_jan10.txt
+  215  echo "Top 3 pickup locations on January 2" > ws3.txt
+  216  cat top3_jan2.txt >> ws3.txt
+  217  echo "" >> ws3.txt
+  218  echo "Top 3 pickup locations on January 10" >> ws3.txt
+  219  cat top3_jan10.txt >> ws3.txt
+  220  echo "" >> ws3.txt
+  221  vim ws3.txt
+  222  history > cmds.log
+  223  vim cmds.log
+  224  mkdir -p cs131/ws3
+  225  mv ws3.txt cmds.log cs131/ws3/
+  226  cd cs131/ws3
+  227  git add ws3.txt cmds.log
+  228  git commit -m "WS3"
+  229  git push
+  230  git config --global user.name "Cardonbb"
+  231  git config --global user.email "crahaki@gmail.com"
+  232  git commit --amend --reset-author
+  233  git push
+  234  git push -u origin main
+  235  git add .
+  236  git rebase --continue
+  237  git push origin main
+  238  git pull origin main --rebase
+  239  git push origin main
+  240  cd ..
+  241  ls -lh
+  242  cd ws3
+  243  ls -lh
+  244  cat ws3.txt cmds.log
+  245  git push origin main
+  246  ls /etc | grep mem
+  247  ls
+  248  ls /proc | grep mem
+  249  cat /etc/os-release
+  250  cat /etc/shadow
+  251  cd cs131/
+  252  ls
+  253  cd cs131
+  254  ls
+  255  cd CS131
+  256  ls
+  257  vim sample.txt
+  258  ls
+  259  touch sample.txt
+  260  ls -l
+  261  chmod 600 sample.txt
+  262  ls -l | grep sample
+  263  su
+  264  sudo password
+  265  sudo passwd
+  266  su
+  267  sudo cat /etc/shadow
+  268  id | grep admin
+  269  id | grep sudo
+  270  adduser student1
+  271  su
+  272  long.sh
+  273  vim long.sh
+  274  sh long.sh
+  275  vim long.sh
+  276  cat long.sh
+  277  vim long.sh
+  278  cat long.sh
+  279  sh long.sh
+  280  sh long.sh >> result.txt &
+  281  ls
+  282  vim result.txt
+  283  jobs
+  284  fg %1
+  285  jobs
+  286  fg %l
+  287  fg %1
+  288  jobs
+  289  bg %1
+  290  vim result.txt
+  291  jobs
+  292  ls
+  293  cd cs131
+  294  ls
+  295  pwd
+  296  ls
+  297  git status
+  298  mkdir a1
+  299  ls
+  300  cd a1
+  301  pwd
+  302  alias l='ls -ltr'
+  303  alias w='ls -l | wc'
+  304  vim .bashrc
+  305  source ~/.bashrc
+  306  l
+  307  w
+  308  l
+  309  alias
+  310  alias w
+  311  alias l
+  312  vim ~/.bashrc
+  313  l
+  314  alias l
+  315  source ~/.bashrc
+  316  alias l
+  317  alias w
+  318  l
+  319  w
+  320  ls
+  321  cd ..
+  322  ls
+  323  cd a1
+  324  ls
+  325  mkdir FARE
+  326  ls
+  327  grep ',48\.0,161\.0,' yellow_tripdata_2019-01.csv | cut -d',' -f5 > FARE/48.0-161.0.txt
+  328  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  329  ls
+  330  grep ',48\.0,161\.0,' 2019-01-h1.csv | cut -d',' -f5 > FARE/48.0-161.0.txt
+  331  grep ',161\.0,48\.0,' 2019-01-h1.csv | cut -d',' -f5 > FARE/161.0-48.0.txt
+  332  count1=$(wc -l < FARE/48.0-161.0.txt); sum1=$(paste -sd+ FARE/48.0-161.0.txt | bc); avg1=$(echo "scale=2; $sum1/$count1" | bc); echo "Mean fare for 48.0->161.0: $avg1"
+  333  count2=$(wc -l < FARE/161.0-48.0.txt); sum2=$(paste -sd+ FARE/161.0-48.0.txt | bc); avg2=$(echo "scale=2; $sum2/$count2" | bc); echo "Mean fare for 161.0->48.0: $avg2"
+  334  grep '2019-01-10' 2019-01-h1.csv > jan10.csv; cut -d',' -f17 jan10.csv > jan10_total.txt; sort -n jan10_total.txt | tail -1
+  335  grep ',[3-9],' 2019-01-h1.csv > multi_passenger_rides.csv; cut -d',' -f9 multi_passenger_rides.csv > multi_passenger_doloc.txt; sort multi_passenger_doloc.txt | uniq -c | sort -nr | head -10
+  336  ls
+  337  cd jan10.csv
+  338  cat jan10.csv
+  339  ls
+  340  ls jan10_total.txt
+  341  cat jat10_total.txt
+  342  ls FARE
+  343  wc -l FARE/48.0-161.0.txt
+  344  head FARE/48.0-161.0.txt
+  345  count=$(wc -l < FARE/48.0-161.0.txt)
+  346  sum=$(paste -sd+ FARE/48.0-161.0.txt | bc)
+  347  echo "scale=2; $sum / $count" | bc
+  348  ls
+  349  cat jan10_total.txt
+  350  ls
+  351  cd cd ~/cs131/a1
+  352  ls
+  353  cd fare
+  354  cd FARE
+  355  ls
+  356  cat 161.0-48.0.txt
+  357  ls
+  358  cd
+  359  rm -r FARE
+  360  ls
+  361  cd cs131
+  362  ls
+  363  cd a1
+  364  ls
+  365  rm -r FARE
+  366  ls
+  367  rm jan10.csv jan10_total.txt multi_passenger_doloc.txt multi_passenger_rides.csv
+  368  rm -r FARE
+  369  ls
+  370  mkdir FARE
+  371  ls
+  372  grep ',48\.0,161\.0,' 2019-01-h1.csv | cut -d',' -f5 > FARE/48.0-161.0.txt
+  373  ls
+  374  grep ',161\.0,48\.0,' 2019-01-h1.csv | cut -d',' -f5 > FARE/161.0-48.0.txt
+  375  cd FARE
+  376  ls
+  377  cd ..
+  378  ls
+  379  count1=$(wc -l < FARE/48.0-161.0.txt)
+  380  sum1=$(paste -sd+ FARE/48.0-161.0.txt | bc)
+  381  avg1=$(echo "scale=2; $sum1 / $count1" | bc)
+  382  echo "Mean fare for 48.0->161.0: $avg1" >> a1.txt
+  383  count2=$(wc -l < FARE/161.0-48.0.txt)
+  384  sum2=$(paste -sd+ FARE/161.0-48.0.txt | bc)
+  385  avg2=$(echo "scale=2; $sum2 / $count2" | bc)
+  386  echo "Mean fare for 161.0->48.0: $avg2" >> a1.txt
+  387  ls
+  388  cd a1.txt
+  389  cat a1.txt
+  390  grep '2019-01-10' 2019-01-h1.csv > jan10.csv
+  391  cut -d',' -f17 jan10.csv > jan10_total.txt
+  392  max_total=$(sort -n jan10_total.txt | tail -1)
+  393  echo "Highest total on 2019-01-10: $max_total" >> a1.txt
+  394  ls
+  395  grep ',[3-9],' 2019-01-h1.csv > multi_passenger_rides.csv
+  396  cut -d',' -f9 multi_passenger_rides.csv > multi_passenger_doloc.txt
+  397  echo "Top 10 DOLocationID for rides with >=3 passengers:" >> a1.txt
+  398  sort multi_passenger_doloc.txt | uniq -c | sort -nr | head -10 >> a1.txt
+  399  ls
+  400  vim a1.txt
+  401  cat a1.txt
+  402  head -1 2019-01-h1.csv
+  403  grep ',3,' 2019-01-h1.csv | head
+  404  grep ',3\.0,' 2019-01-h1.csv | head
+  405  # Pair 1: 48.0 -> 161.0
+  406  grep ',48\.0,161\.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/48.0-161.0.txt
+  407  # Pair 2: 161.0 -> 48.0
+  408  grep ',161\.0,48\.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/161.0-48.0.txt
+  409  ls
+  410  cd FARE
+  411  ls
+  412  cat 161.0-48.0.txt
+  413  cd ..
+  414  ls
+  415  rm jan10.csv jan10_total.txt multi_passenger_doloc.txt multi_passenger_rides.csv
+  416  rm -r FARE
+  417  ls
+  418  rm a1.txt
+  419  ls
+  420  mkdir FARE
+  421  grep ',48\.0,161\.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/48.0-161.0.txt
+  422  grep ',161\.0,48\.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/161.0-48.0.txt
+  423  count1=$(wc -l < FARE/48.0-161.0.txt)
+  424  sum1=$(paste -sd+ FARE/48.0-161.0.txt | bc)
+  425  avg1=$(echo "scale=2; $sum1 / $count1" | bc)
+  426  echo "Mean for 48.0->161.0: $avg1" >> a1.txt
+  427  count2=$(wc -l < FARE/161.0-48.0.txt)
+  428  sum2=$(paste -sd+ FARE/161.0-48.0.txt | bc)
+  429  avg2=$(echo "scale=2; $sum2 / $count2" | bc)
+  430  echo "Mean for 161.0->48.0: $avg2" >> a1.txt
+  431  grep '2019-01-10' 2019-01-h1.csv > jan10.csv
+  432  cut -d',' -f17 jan10.csv > jan10_total.txt
+  433  max_total=$(sort -n jan10_total.txt | tail -1)
+  434  echo "Highest total on Jan 10: $max_total" >> a1.txt
+  435  grep ',[3-9],' 2019-01-h1.csv > multi_passenger_rides.csv
+  436  cut -d',' -f9 multi_passenger_rides.csv > multi_passenger_doloc.txt
+  437  echo "Top 10 drop off locations for rides with 3 or more passengers:" >> a1.txt
+  438  sort multi_passenger_doloc.txt | uniq -c | sort -nr | head -10 >> a1.txt
+  439  ls
+  440  cat a1.txt
+  441  grep ',[3-9],' 2019-01-h1.csv | wc -l
+  442  vim a1.txt
+  443  l
+  444  w
+  445  history > cmds.log
+  446  nano cmds.log
+  447  lss
+  448  ls
+  449  cd cs1313
+  450  ls
+  451  cd cs131
+  452  ls
+  453  cd a1
+  454  ls
+  455  git add a1
+  456  ls
+  457  cd ..
+  458  ls
+  459  git add a1
+  460  git commit -m "as1"
+  461  git push
+  462  git reset HEAD
+  463  git add a1/a1.txt a1/FARE
+  464  git commit -m "as1"
+  465  ls
+  466  cd a1
+  467  ls
+  468  git add a1.txt
+  469  git add FARE
+  470  git add cmds.log
+  471  git commit -m "as1"
+  472  git status
+  473  ls -a
+  474  git status
+  475  cd ~/cs131
+  476  git status
+  477  ls -a
+  478  git status
+  479  git add a1
+  480  git commit -m "a1"
+  481  git push --set-upstream origin main
+  482  git push --force origin main
+  483  git status
+  484  git pull origin main --rebase
+  485  git add .
+  486  ls
+  487  git commit -m "Commit local changes"
+  488  git pull origin main --rebase
+  489  git add .
+  490  git rebase --continue
+  491  s
+  492  ls
+  493  s
+  494  ls
+  495  cd cs131
+  496  ls
+  497  cat a1
+  498  ls
+  499  cd cat1
+  500  cd a1
+  501  ls
+  502  cd ..
+  503  cd..
+  504  ls
+  505  cd CS131
+  506  ls
+  507  cd ..
+  508  ls
+  509  pwd
+  510  ls -a
+  511  git add a1
+  512  git commit -m "Add a1"
+  513  git status
+  514  git remote -v
+  515  git push
+  516  git push --set-upstream origin main
+  517  git pull origin main --rebase
+  518  git push origin main --force
+  519  git rebase --abort
+  520  git submodule deinit -f -- CS131
+  521  rm -rf CS131
+  522  rm -rf .git/modules/CS131
+  523  git add -A
+  524  git commit -m "Remove CS131"
+  525  git pull origin main --rebase
+  526  git add .
+  527  git rebase --continue
+  528  git push origin main --force
+  529  ls
+  530  a
+  531  cd ~
+  532  cp -r cs131 cs131_backup
+  533  cd ~/cs131
+  534  rm -rf .git
+  535  git init
+  536  git remote add origin https://github.com/Cardonbb/CS131.git
+  537  ls
+  538  cd
+  539  cd a1
+  540  ls
+  541  cd cs131_backup
+  542  ls
+  543  cd a1
+  544  ls
+  545  git add a1.txt
+  546  git add cmds.log
+  547  git add FARE
+  548  git commit -m "add as1"
+  549  git status
+  550  git add FARE cmds.log
+  551  git add a1.txt
+  552  ls
+  553  git status
+  554  rm -rf .git
+  555  git init
+  556  git add a1
+  557  ls
+  558  cd
+  559  cd ..
+  560  ls
+  561  cd carter.alemania
+  562  ls
+  563  cd ..
+  564  ls
+  565  cd carter_alemania
+  566  ls
+  567  cd cs131
+  568  ls
+  569  git add a1
+  570  git commit -m "Add a1"
+  571  git remote add origin https://github.com/Cardonbb/CS131.git
+  572  git push --set-upstream origin main
+  573  git branch
+  574  git push --set-upstream origin master
+  575  ls
+  576  rm -rf *
+  577  ls
+  578  sudo apt update
+  579  sudo apt install git -y
+  580  Building dependency tree       
+  581  ls
+  582  git clone https://github.com/Cardonbb/CS131.git .
+  583  rm -rf * .git
+  584  git clone https://github.com/Cardonbb/CS131.git .
+  585  ls
+  586  cd ..
+  587  ls
+  588  cd carter_alemania
+  589  ls
+  590  git init
+  591  git remote add origin https://github.com/Cardonbb/CS131.git
+  592  git fetch origin
+  593  git reset --hard origin/main  # Replace 'main' with your branch if different
+  594  ls
+  595  vim ~./bashrc
+  596  nano ~/.bashrc
+  597  l
+  598  w
+  599  nano ~/.bashrc
+  600  w
+  601  ls
+  602  w
+  603  source ~./bashrc
+  604  ls -la ~
+  605  nano ~/.bashrc
+  606  source ~/.bashrc
+  607  l
+  608  w
+  609  ls
+  610  mkdir a1
+  611  ls
+  612  cd a1
+  613  ls
+  614  mkdir FARE
+  615  head -n 5 2019-01-h1.csv
+  616  gdown 1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3
+  617  ls
+  618  head -n 5 2019-01-h1.csv
+  619  grep ',48\.0,161\.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/48.0-161.0.txt
+  620  grep ',161\.0,48\.0,' 2019-01-h1.csv | cut -d',' -f11 > FARE/161.0-48.0.txt
+  621  count1=$(wc -l < FARE/48.0-161.0.txt)
+  622  sum1=$(paste -sd+ FARE/48.0-161.0.txt | bc)
+  623  avg1=$(echo "scale=2; $sum1 / $count1" | bc)
+  624  echo "Mean fare for 48.0 to 161.0: $avg1" >> a1.txt 
+  625  count2=$(wc -l < FARE/161.0-48.0.txt)
+  626  sum2=$(paste -sd+ FARE/161.0-48.0.txt | bc)
+  627  avg2=$(echo "scale=2; $sum2 / $count2" | bc)
+  628  echo "Mean fare for 161.0 to 48.0: $avg2" >> a1.txt 
+  629  grep '2019-01-10' 2019-01-h1.csv > jan10.csv
+  630  cut -d',' -f17 jan10.csv > jan10_total.txt
+  631  max_total=$(sort -n jan10_total.txt | tail -1)
+  632  echo "Highest total on jan 10: $max_total" >> a1.txt
+  633  grep ',[3-9],' 2019-01-h1.csv > multi_passenger_rides.csv
+  634  cut -d',' -f9 multi_passenger_rides.csv > multi_passenger_doloc.txt
+  635  echo "Top 10 dropoff with 3+ pass:" >> a1.txt 
+  636  sort multi_passenger_doloc.txt | uniq -c | sort -nr | head -10 >> a1.txt
+  637  ls
+  638  cd a1.txt
+  639  cat a1.txt
+  640  nano a1.txt
+  641  history > cmds.log
+  642  ls
+  643  history > cmds.log
