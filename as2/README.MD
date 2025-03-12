@@ -28,7 +28,7 @@ carter_alemania@instance-20250127-220448:~/as2$ chmod 755 ./as2.sh
 carter_alemania@instance-20250127-220448:~/as2$ ls
 README.MD  as2.sh
 carter_alemania@instance-20250127-220448:~/as2$ ./as2.sh
-Please Enter Homework assignment
+Enter Homework assignment
 testTaxi
  we need a dataset (Y/N): Y
 Enter Dataset Id or type taxi for last dataset
@@ -47,7 +47,7 @@ README.md  dataset.csv  testTaxi.txt
 **Without Dataset Example**
 ```
 carter_alemania@instance-20250127-220448:~/as2$ ./as2.sh
-Please Enter Homework assignment
+Enter Homework assignment
 noTaxi
  we need a dataset (Y/N): n
 carter_alemania@instance-20250127-220448:~/as2$ ls
