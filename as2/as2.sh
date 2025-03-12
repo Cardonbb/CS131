@@ -17,7 +17,7 @@ validate()
 
 
 #get what we will call this assignment 4,5,6,etc
-echo "Please Enter Homework assignment"
+echo "Enter Homework assignment"
 read hw
 
 
