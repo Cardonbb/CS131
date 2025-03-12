@@ -22,6 +22,7 @@ dataset.csv, (input).txt and a readme
 
 or if you enter in XXXXXXXXXXX id then it will download taht dataset and same thing as ^
 
+** With Taxi Database Example**
 ```copypaste stuff:
 carter_alemania@instance-20250127-220448:~/as2$ chmod 755 ./as2.sh
 carter_alemania@instance-20250127-220448:~/as2$ ls
@@ -45,6 +46,9 @@ carter_alemania@instance-20250127-220448:~/as2/testTaxi$ ls
 README.md  dataset.csv  testTaxi.txt
 carter_alemania@instance-20250127-220448:~/as2/testTaxi$ cd
 carter_alemania@instance-20250127-220448:~$ cd as2
+```
+**Without Dataset Example**
+```
 carter_alemania@instance-20250127-220448:~/as2$ ./as2.sh
 Please Enter Homework assignment
 noTaxi
