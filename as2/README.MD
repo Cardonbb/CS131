@@ -43,8 +43,6 @@ README.MD  as2.sh  testTaxi
 carter_alemania@instance-20250127-220448:~/as2$ cd testTaxi
 carter_alemania@instance-20250127-220448:~/as2/testTaxi$ ls
 README.md  dataset.csv  testTaxi.txt
-carter_alemania@instance-20250127-220448:~/as2/testTaxi$ cd
-carter_alemania@instance-20250127-220448:~$ cd as2
 ```
 **Without Dataset Example**
 ```
