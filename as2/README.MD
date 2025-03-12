@@ -1,27 +1,26 @@
-#What this command does
+# What this command does
 my command simply automates making the directory of our homeworks in this class
 
-
-#Why/When this command is useful
+# Why/When this command is useful
 This command is useful whenever a new assignment is due in our class
 
-#How you can use this command
+# How you can use this command
 just type ./as2.sh and then see below easier to show in example
 
+# Examples + example workflow
 
-#Examples + example workflow
+**Step 1:** simply enter the command  
+./as2.sh
 
-Step 1: simply enter the command ./ash.sh 
-Step 2:
-you are then prompted if u want to include a data set. I wasnt sure how to store and save for later but for now I have the taxi dataset we have been using id saved 
+
+**Step 2:** you are then prompted if u want to include a data set. I wasnt sure how to store and save for later but for now I have the taxi dataset we have been using id saved
 i also added a validate checker so u enter Y or N
-if no it will then create ur (input).txt and a readme for it 
+if no it will then create ur (input).txt and a readme for it
 
-Step 3: if you enter yes you can either type the taxi and it will create a new directory with
+**Step 3:** if you enter yes you can either type the taxi and it will create a new directory with
 dataset.csv, (input).txt and a readme
 
 or if you enter in XXXXXXXXXXX id then it will download taht dataset and same thing as ^
-
 
 copypaste stuff:
 carter_alemania@instance-20250127-220448:~/as2$ chmod 755 ./as2.sh
