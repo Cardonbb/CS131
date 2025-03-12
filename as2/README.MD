@@ -12,7 +12,6 @@ just type ./as2.sh and then see below easier to show in example
 **Step 1:** simply enter the command  
 ./as2.sh
 
-
 **Step 2:** you are then prompted if u want to include a data set. I wasnt sure how to store and save for later but for now I have the taxi dataset we have been using id saved
 i also added a validate checker so u enter Y or N
 if no it will then create ur (input).txt and a readme for it
