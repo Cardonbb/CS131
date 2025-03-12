@@ -38,7 +38,6 @@ From (original): https://drive.google.com/uc?id=1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn
 From (redirected): https://drive.google.com/uc?id=1fc3saVu2GtG3Rft3zI-VOOsZhaqcSyn3&confirm=t&uuid=975d1a6d-bf78-43b8-95c3-4f2685f038ee
 To: /home/carter_alemania/as2/testTaxi/dataset.csv
 100%|██████████████████████████████████████████████████████████| 450M/450M [00:04<00:00, 103MB/s]
-./as2.sh: line 49: /home/carter_alemania: Is a directory
 carter_alemania@instance-20250127-220448:~/as2$ ls
 README.MD  as2.sh  testTaxi
 carter_alemania@instance-20250127-220448:~/as2$ cd testTaxi
