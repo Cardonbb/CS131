@@ -22,7 +22,7 @@ dataset.csv, (input).txt and a readme
 
 or if you enter in XXXXXXXXXXX id then it will download taht dataset and same thing as ^
 
-copypaste stuff:
+```copypaste stuff:
 carter_alemania@instance-20250127-220448:~/as2$ chmod 755 ./as2.sh
 carter_alemania@instance-20250127-220448:~/as2$ ls
 README.MD  as2.sh
@@ -58,6 +58,7 @@ carter_alemania@instance-20250127-220448:~/as2/noTaxi$ cd
 carter_alemania@instance-20250127-220448:~$ cd as2
 carter_alemania@instance-20250127-220448:~/as2$ ls
 README.MD  as2.sh  noTaxi  testTaxi
+```
 
 
 
