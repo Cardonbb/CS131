@@ -1,0 +1,49 @@
+  832  LS
+  833  ls
+  834  cp 2019-01-h1.csv taxi.csv
+  835  ls
+  836  mv taxi.csv ws56
+  837  ls
+  838  cd ws56
+  839  ls
+  840  vim taxi.csv
+  841  sed -n '/^2.0,/p' taxi.csv > vendor2.csv
+  842  ls
+  843  vim vendor2.csv
+  844  sed 's/[:\"-]//g' taxi.csv > no-separators.csv
+  845  ks
+  846  ls
+  847  head -10 no-separators.csv
+  848  head 10 taxi.csv
+  849  sed 's/[:\"-]//g' taxi.csv | head -10  > no-separators2.csv
+  850  ls
+  851  vim no-separators2.csv
+  852  rm no-separators.csv
+  853  ls
+  854  cat no-separators2.csv
+  855  sed 's/\.[0-9][0-9]*//g' no-separators2.csv > no-fractions.csv
+  856  ls
+  857  cat no-fractions.csv
+  858  history > cmds.log
+  859  vim cmds.log
+  860  ls
+  861  cat no-fractions.csv
+  862  awk -F ',' '$17 >= 10.0 { tip[$14]++ } END { for (i in tip) print i, tip[i] }' taxi.csv > ws56.txt
+  863  cat ws56.txt
+  864  awk -F ',' '{ tip[$14]++ } END { for (i in tip) print i, tip[i] }' taxi.csv | sort -k2 -nr | head -20 > ws56.txt
+  865  cat ws56.txt
+  866  history > cmds.log
+  867  vim cmds.log
+  868  cat cmds.log
+  869  vim cmds.log
+  870  cat cmds.log
+  871  ls
+  872  cd ..
+  873  ls
+  883  ls
+  884  cd ws56
+  885  wc vendor2.csv
+  886  carter_alemania@instance-20250127-220448:~/ws56$ wc vendor2.csv
+
+carter_alemania@instance-20250127-220448:~/ws56$   2206417   6619251 272950834 vendor2.csv for 1.1
+
