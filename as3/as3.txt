@@ -1,0 +1,22 @@
+Student total scores:
+David: 195
+avg: 65
+Failed
+Eve: 265
+avg: 88.3333
+passed
+Bob: 246
+avg: 82
+passed
+Charlie: 270
+avg: 90
+passed
+Alice: 253
+avg: 84.3333
+passed
+highest score Charlie: 270
+lowest score David: 195
+~                                                                                                                                                     
+~                                                                                                                                                     
+~                                                                                                                                                     
+~                                             
