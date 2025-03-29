@@ -1,0 +1,28 @@
+  954  mkdir as3
+  955  cd as3
+  956  ls
+  957  vim grades.csv
+  958  ls
+  959  vim grades.awk
+  960  vim grader.awk
+  961  awk -f grader.awk grades.csv
+  962  vim grader.awk
+  963  awk -f grader.awk grades.csv
+  964  vim grader.awk
+  965  awk -f grader.awk grades.csv
+  966  vim grader.awk
+  967  awk -f grader.awk grades.csv
+  968  vim grader.awk
+  969  awk -f grader.awk grades.csv
+  970  awk -F grader.awk grades.csv
+  971  awk -f grader.awk grades.csv
+  972  cat grader.awk
+  973  awk grades.csv
+  974  cat grades.csv
+  975  vim grader.awk
+  976  awk -f grader.awk grades.csv
+  977  awk -f grader.awk grades.csv > as3.txt
+  978  ls
+  979  cat as3.txt
+  980  hist >  cmnd.log 
+  981  history > cmnd.log
